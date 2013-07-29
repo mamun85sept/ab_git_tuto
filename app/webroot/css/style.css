@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document */
+/* ==========================================================================
+   Style CSS for template
+   ========================================================================== */
+
+body {
+font-family: arial, sans-serif;
+font-size: 100%; /* best for all browser using em */
+padding:0; 
+margin:0;
+background: #f4f4f4;
+}
+
+*, html { line-height: 1.4em; }
+
+article img { width:auto; max-width:100%; height:auto; }
+
+.sidebar a, article a, header a, footer a { color: #C30; }
+header a { text-decoration: none; }
+/* ==========================================================================
+   Wrapper
+   ========================================================================== */
+#wrapper {
+font-size: 0.8em; /* 13px from 100% global font-size */
+max-width: 996px; /* standard 1024px wide */
+margin: 0 auto;
+overflow:hidden;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+	padding: 1em 0;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	background: #eeeef1;
+}
+header hgroup { width: 100%; font-weight:normal; }
+.logo{ float:left;}
+.joinus{ 
+    float:right;
+	margin-top: 20px;
+	}
+.joinus ul{}
+.joinus ul li{ 
+  float:left;
+  padding: 10px;
+  text-align: right;
+  }
+.joinus ul li a{
+	font-size: 18px;
+	font-family:"Times New Roman", Times, serif;
+	color: #385999;
+	}	
+.joinus ul li a:hover{}
+.joinus ul li a:active{}
+.keepup{
+	color: #000;
+	}
+.facebookicon{
+	 margin-top: 10px;
+	 }	
+
+/* ==========================================================================
+   NAV MAIN
+   ========================================================================== */
+nav {
+	display: block;
+	margin: 0 0 1em;
+	padding: 0px;
+	float: left;
+	width: 100%;
+	background-color: #e8e8ea;
+}
+nav ul ul {display: none;}
+nav ul li:hover > ul {display: block;}
+	
+nav ul {
+	padding: 0;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	z-index: 9999;
+	margin: 0px;
+	float: left;
+	width: 100%;
+}
+nav ul:after {content: ""; clear: both; display: block;}
+
+nav ul li {float: left; background:url("../img/menu_devaider.png") no-repeat scroll right center transparent;}
+nav ul li:last-child {background:none;}
+
+nav ul li:hover a {color: #fff;}
+
+nav ul li a {
+	display: block;
+	padding: 1em;
+	font-size: 1.125em;
+	color: #000;
+	text-decoration: none;
+	margin: 0px;
+	font-family:"Times New Roman", Times, serif;
+	text-transform:uppercase;
+}
+nav ul li:last-of-type a {border-right: 1px solid transparent !important;}
+
+nav ul ul {
+	background: #5f6975;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	width: auto;
+	float: none;
+}
+nav ul li:hover {
+	background: #f7971e;
+	color: #FFF;
+}
+nav ul ul li a:hover {
+	background-color: #f7971e;
+}
+
+nav ul ul li {
+float: none;
+border-bottom: 1px solid #444240;
+position: relative;
+}
+
+nav ul ul li a {
+padding: 0.5em 1em;
+font-size: 1em;
+width:10em;
+color: #fff;
+}	
+
+
+nav ul ul ul {
+position: absolute; left: 100%; top:0;
+}
+/* ==========================================================================
+   BANNER
+   ========================================================================== */
+.banner{ overflow:hidden; width:100%;  margin-bottom: 30px;}
+.slide{}
+.slide a{}   
+   
+/* ==========================================================================
+   Section 
+   ========================================================================== */
+section.content { width: 100%;}
+.content article { width:100%; float:left; padding: 0 1em 1em; margin: 0 0 1em; background: #eeeef1; }
+article .entry { clear:both; padding: 0 0 1em; }
+.entry.post-meta { color: #888; }
+.entry.post-meta span { padding: 0 1em 0 0; }
+.entry.post-content { font-size: 1.125em; margin:0; padding:0;}
+/* ==========================================================================
+   Welcome surf
+   ========================================================================== */
+h1.post-title { font-size: 1.6em; margin:0; padding:0; font-family: 'Open Sans', sans-serif; text-align:center;}
+h1.post-title a { color:#000; text-decoration:none;}
+.postimg{margin-top: 10px;}
+.surfing-club{ float:left; width:330px;}
+.about-club{ float:left; width:330px;}
+.events-club{ float:left; width:330px;}
+.description{ padding:5px;}
+.more{}
+.more a{ text-decoration:none; color:#f7971e;}
+.more a:hover{color:#74cbde;}
+/* ==========================================================================
+   LATEST NEWS
+   ========================================================================== */
+.post-inner{ width:972px; overflow:hidden; border-top:1px solid #000; margin-top:20px;  border-bottom: 1px solid #000000;}
+.latest-news{ float:left; width:325px; border-right:1px solid #000;}
+.latest-inner{  border-top:1px solid #000;  overflow: hidden; width: 314px;}
+.dated-img{ float:left; width:130px; margin-top:12px;}
+.dated{ float:right; width:173px; margin-top: 5px;}
+p.seeallnews{ border-top:1px solid #000; text-align: center; width: 314px; margin: 10px 0; padding: 5px 0;}
+p.seeallnews a{ text-decoration:none; color:#f7971e;}
+h4.date-title{ margin:0px;}
+h4.date-title a { color:#ff0000; text-decoration:none;}
+.chempion-news{ float:left; width:325px; border-right:1px solid #000;}
+.chempion-news-inner{border-top: 1px solid #000000; margin-left: 5px; width:312px;}
+h2.peoplesay{ font-family: 'Open Sans', sans-serif; font-family: 'Open Sans', sans-serif; border-bottom:1px solid #000; padding-bottom: 10px; margin:0px;}
+h3.deatils{}
+h3.deatils a{ text-decoration:none; color:#f7971e;}
+.clendar-news{ float:left; width:320px;}
+.clendar-news-inner{}
+h1.text-title { font-size: 1.6em; margin: 0 10px 0 0; padding:0; font-family: 'Open Sans', sans-serif; text-align:center; }
+h1.text-title a { color:#000; text-decoration:none;}
+
+
+
+/* ==========================================================================
+   Aside
+   ========================================================================== */
+/*aside.sidebar { width: 25%; float:right; }
+aside.sidebar ul {
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	list-style: none;
+}
+aside.sidebar ul li {
+	width:100%;
+	margin: 0px 0px 2em;
+	padding: 0px;
+	float: left;
+	list-style: none;
+}
+aside.sidebar ul li ul li {
+	margin: 0px 0px 0.2em;
+	padding: 0px;
+}
+aside.sidebar ul li ul li ul li {
+	margin: 0px;
+	padding: 0px 0px 0px 1em;
+	width: 90%;
+	font-size: 0.9em;
+}
+aside.sidebar ul li h3.widget-title {
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+    font-size: 1.45em;
+}
+*/
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+	width: 98%;
+	float:left;
+}
+footer .footer-left { width: 65%; float:left; text-align:left; }
+.footer-nav { margin: 0;}
+.footer-nav li{ float:left; padding: 1em; font-size: 1em; text-decoration: none; margin: 0px; font-family:"Times New Roman", Times, serif;
+	text-transform:uppercase;}
+.footer-nav  li a{ text-decoration:none; color: #000;}	
+.footer-nav  li a:hover{ color: #f7971e;}	
+
+footer .footer-right { width: 30%; float:right; text-align:right;margin-top: 16px; }
+footer .footer-right a { padding: 1em; font-size: 1em; text-decoration: none; margin: 0px; font-family:"Times New Roman", Times, serif;  color: #000;}
+footer .footer-right a:hover {  color: #f7971e;}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+// mobile css
+/////////////////////////////////////////////////////////////////////////////*/
+
+
+/* ipad 768px */
+@media only screen and (min-width:470px) and (max-width:770px){
+body {} /*lets add some background color so we know which dimension we're in */
+#wrapper { width:96%; font-size: 0.6875em; }
+.post-inner{width:100%;}
+section.content, aside.sidebar { width:100%; }
+}
+
+/* iphone 468px */
+@media only screen and (min-width:270px) and (max-width:470px){
+body { background: #f4f4f4; } /*lets add some background color so we know which dimension we're in */
+#wrapper { width:96%; font-size: 0.6875em; }
+.post-inner{width:100%;}
+section.content, aside.sidebar { width:100%; }
