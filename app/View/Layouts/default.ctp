@@ -96,6 +96,7 @@
         <?php echo $this->element('menu'); ?>
         
 	<section class="banner">
+    comment for git hub tutorial
            <?php echo $this->element('slider'); ?>
     </section>
 
